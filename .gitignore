@@ -1,0 +1,17 @@
+# ���� �ƿ�ǲ
+node_modules/
+dist/
+
+# ȯ�漳��
+.env
+
+# ������ ����
+.vscode/
+
+# npm �α�
+npm-debug.log*
+
+# ��Ű�� �� ����
+package-lock.json
+yarn.lock
+.vercel

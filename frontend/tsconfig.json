@@ -1,0 +1,9 @@
+{
+  "extends": "react-scripts/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+
