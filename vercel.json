@@ -1,13 +1,14 @@
 {
   "version": 2,
   "builds": [
-    { "src": "backend/api/index.js", "use": "@vercel/node" },
-    { "src": "frontend/package.json", "use": "@vercel/static-build" }
+    { "src": "backend/api/index.js",    "use": "@vercel/node" },
+    { "src": "frontend/package.json",   "use": "@vercel/static-build" }
   ],
   "routes": [
+    // /api/* 로 들어오는 요청은 모두 이 Express 앱으로 전달
     { "src": "/api/(.*)", "dest": "/backend/api/index.js" },
+    // 그 외 요청은 모두 프론트엔드 정적 파일로
     { "src": "/(.*)",     "dest": "/frontend/$1" }
   ]
 }
-
 
